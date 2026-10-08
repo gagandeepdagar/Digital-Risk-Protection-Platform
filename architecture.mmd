@@ -1,0 +1,33 @@
+flowchart TB
+  C[Any-brand scan request] --> B[React investigation console]
+  A[Brand profile & official allowlist] --> B
+  B --> D[Express monitor API]
+  subgraph S[Independent public sources]
+    direction LR
+    E[Bing public web index]
+    F[Wikidata entity & social links]
+    G[Apple iTunes Search]
+    H[Google Play search index]
+    I[Certificate transparency]
+  end
+  D --> E
+  D --> F
+  D --> G
+  D --> H
+  D --> I
+  E --> J[Normalize candidates & attach evidence]
+  F --> J
+  G --> J
+  H --> J
+  I --> J
+  A --> K{Exact official asset match?}
+  J --> K
+  K -->|Yes: suppress from threat queue| L[Known-good asset]
+  K -->|No| M[Look-alike, publisher & domain signals]
+  A --> N[Browser-side perceptual logo hash]
+  J --> N
+  N --> M
+  M --> O[Risk priority + source confidence]
+  O --> P[Human review: social, apps, websites]
+  P --> Q[Browser-local profile & scan storage]
+  R[Timeout, block or empty status] --> B
