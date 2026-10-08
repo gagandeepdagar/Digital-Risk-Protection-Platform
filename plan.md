@@ -56,7 +56,7 @@ The diagram's sources are best-effort public sources. A source-state record (`av
 - **Layout Paradigm:** Persistent narrow left rail, top-level search band, asymmetric editorial dashboard, and a vertically ordered findings feed rather than a centered generic card grid.
 - **Signature Elements:** A custom split-ring signal mark; fine technical rules and mono source labels; small confidence-meter bars with text labels.
 - **Interaction Philosophy:** Direct manipulation, useful empty/loading/error states, visible evidence links, and confirmation before removing or changing official-asset records.
-- **Animation:** Restrained 140–220 ms opacity/position transitions; a calm scan progress sweep and reduced-motion fallback; no perpetual decoration or flashing alert effects.
+- **Animation:** Add a slow monochrome 3D orbital signal around the hero mark, a 10-second low-amplitude floating perspective on the sample pipeline panel, brief translateZ/perspective entry for its flow nodes, and subtle 3D lift on review surfaces. Keep motion slow, non-blocking and low-contrast; remove movement and transitions under `prefers-reduced-motion` and avoid flashing effects.
 - **Typography System:** Manrope for a compact editorial headline hierarchy, DM Sans for readable UI/body copy, and DM Mono for source labels, timestamps, and identifiers.
 - **Brand Essence:** A focused early-warning console for security and brand teams that turns public discovery into explainable, reviewable leads. Personality: exact, composed, transparent.
 - **Brand Voice:** Short, evidence-led statements. Examples: “Find look-alikes. Keep the real ones clear.” “Candidates from public sources—not proof of abuse.”
